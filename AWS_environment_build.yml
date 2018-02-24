@@ -11,9 +11,9 @@
 # Create AWS instances
   tasks:
   - name: Create 3Tier application AWS instances via supplied script
-    #command: source credential.rc ; ./order_svc.sh -c '{{ catalog_name }}' -i '{{ item_name }}' -t 1 -y
-    command: echo "Test Command, catalog_name={{ catalog_name }} and item_name={{ item_name }}"
+    command: source credential.rc ; ./order_svc.sh -c '{{ catalog_name }}' -i '{{ item_name }}' -t 1 -y
     register: build_log
+    ignore_errors: yes
 
   - name: Debug AWS Build
     debug: 
