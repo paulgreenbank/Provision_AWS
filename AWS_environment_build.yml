@@ -13,6 +13,8 @@
   - name: Create 3Tier application AWS instances via supplied script
     shell: source credential.rc ; echo '{{ catalog_name }}' -i '{{ item_name }}' 
     #shell: source credential.rc ; ./order_svc.sh -c '{{ catalog_name }}' -i '{{ item_name }}' -t 1 -y
+    args:
+      chdir: ~/
     register: build_log
     ignore_errors: yes
 
