@@ -1,4 +1,23 @@
 ---
+## RedHat Ansible Boot Camp homework assignment
+## Playbook have been written as a PoC for a 3Tier Application deployment
+## All playbook have been written via Ansible Core and used in Ansible Tower
+
+## Created a written by Paul Greenbank - Technical Consultant for Open System Specialists
+
+## Playbook description:
+#
+# Uses supplied RedHat scripts and instrunctions to deploy 3Tier Application instances into
+# AWS using RedHat's OpenTLC deployment system.
+#
+
+## Playbook enhancements post PoC:
+#
+# Issues encountered with this were where the order_svc.sh script called another binary which wasn't located
+# in the path of the running ansible user. I over came this by adding the path to the users shell so it was run
+# correctly.
+# This would have been better achieved using the `environment` argument with the shell command.
+#
 
 # Playbook to create AWS instances, basic playbook to call build script
 
