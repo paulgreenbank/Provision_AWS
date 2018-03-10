@@ -10,7 +10,7 @@ No special requirements are need for playbook and roles, however some pre-config
 
 ## Role Variables 
 
-Available variables are listed below, along with set values (see `roles/openstack_instance/vars/{application[1,2].yml,database.yml,frontend.yml`):
+Available variables are listed below, along with set values:
 
     catalog_name: OPENTLC Automation
 
